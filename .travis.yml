@@ -1,0 +1,28 @@
+# https://docs.travis-ci.com/user/getting-started/
+# https://docs.travis-ci.com/user/languages/ruby/
+language: ruby
+rvm:
+  - 2.3
+cache: bundler
+sudo: false
+script:
+  - make build
+
+# https://docs.travis-ci.com/user/deployment/pages/
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_API_KEY
+  keep-history: true
+  on:
+    branch: master
+  target-branch: gh-pages
+  keep-history: true
+  email: deploy@travis-ci.org
+  name: deploy-bot
+  allow-empty-commit: false
+  github-url: github.com
+  verbose: true
+
+# https://stackoverflow.com/questions/23277391/how-to-publish-to-github-pages-from-travis-ci
+# https://ibug.github.io/blog/2018/04/build-github-pages-with-travis-ci.html
