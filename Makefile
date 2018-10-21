@@ -19,8 +19,10 @@ install:
 	sudo gem install jekyll bundler
 
 build: Gemfile
+	set -e # halt script on error
 	# 构建网站，输出到 _site 目录
 	$(EXEC) build
+	$(EXEC) htmlproofer ./_site --disable-external
 
 update: Gemfile
 	$(BUND) update
