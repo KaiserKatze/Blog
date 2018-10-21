@@ -6,6 +6,8 @@ rvm:
   - 2.4.1
 cache: bundler  # caching bundler gem packages will speed up build
 sudo: false  # route your build to the container-based infrastructure for a faster build
+git:
+  depth: 1
 script:
   - make update
   - make build
@@ -33,7 +35,7 @@ deploy:
   github-token: $GITHUB_API_KEY
   keep-history: true
   on:
-    branch: master
+    branch: source
   target-branch: master
   keep-history: true
   email: deploy@travis-ci.org
