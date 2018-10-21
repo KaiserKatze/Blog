@@ -1,7 +1,7 @@
 # https://jekyllrb.com/docs/step-by-step/01-setup/
 
 BUND=bundle
-EXEC=$(BUND) exec jekyll
+EXEC=$(BUND) exec
 EXEC_IP="0.0.0.0"
 EXEC_PORT=9444
 LOG_FILE=jekyll.log
@@ -21,7 +21,7 @@ install:
 build: Gemfile
 	set -e # halt script on error
 	# 构建网站，输出到 _site 目录
-	$(EXEC) build
+	$(EXEC) jekyll build
 	$(EXEC) htmlproofer ./_site --disable-external
 
 update: Gemfile
@@ -29,4 +29,4 @@ update: Gemfile
 
 test: Gemfile
 	# 每当文件发生变更时，重新构建
-	nohup $(EXEC) serve --host $(EXEC_IP) --port $(EXEC_PORT) &>$(LOG_FILE) &
+	nohup $(EXEC) jekyll serve --host $(EXEC_IP) --port $(EXEC_PORT) &>$(LOG_FILE) &
