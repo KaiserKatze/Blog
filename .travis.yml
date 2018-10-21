@@ -8,6 +8,11 @@ sudo: false
 script:
   - make build
 
+# https://docs.travis-ci.com/user/customizing-the-build/#safelisting-or-blocklisting-branches
+branches:
+  only:
+    - source
+
 # https://docs.travis-ci.com/user/deployment/pages/
 deploy:
   provider: pages
