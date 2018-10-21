@@ -16,7 +16,7 @@ deploy:
   keep-history: true
   on:
     branch: master
-  target-branch: gh-pages
+  target-branch: master
   keep-history: true
   email: deploy@travis-ci.org
   name: deploy-bot
