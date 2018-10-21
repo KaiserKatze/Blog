@@ -6,7 +6,6 @@ layout: default
 title: Index
 ---
 
-{% include navigation.md %}
 <div>
-    <p>KaiserKatze 的技术博客</p>
+  <p>KaiserKatze 的技术博客</p>
 </div>
