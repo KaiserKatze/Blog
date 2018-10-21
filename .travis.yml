@@ -1,0 +1,52 @@
+# https://jekyllrb.com/docs/continuous-integration/travis-ci/
+# https://docs.travis-ci.com/user/getting-started/
+# https://docs.travis-ci.com/user/languages/ruby/
+language: ruby
+rvm:
+  - 2.4.1
+cache: bundler  # caching bundler gem packages will speed up build
+sudo: false  # route your build to the container-based infrastructure for a faster build
+git:
+  depth: 1
+script:
+  - make update
+  - make build
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+addons:
+  apt:
+    packages:
+      - libcurl4-openssl-dev
+
+# branch whitelist, only for GitHub Pages
+# https://docs.travis-ci.com/user/customizing-the-build/#safelisting-or-blocklisting-branches
+branches:
+  only:
+    - source
+
+
+# https://docs.travis-ci.com/user/deployment/pages/
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_API_KEY
+  keep-history: true
+  on:
+    branch: source
+  target-branch: master
+  keep-history: true
+  email: deploy@travis-ci.org
+  name: deploy-bot
+  allow-empty-commit: false
+  github-url: github.com
+  verbose: true
+
+# https://stackoverflow.com/questions/23277391/how-to-publish-to-github-pages-from-travis-ci
+# https://ibug.github.io/blog/2018/04/build-github-pages-with-travis-ci.html
+
+# Optional: disable email notifications about the outcome of your builds
+notifications:
+  email: false
