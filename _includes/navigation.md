@@ -2,7 +2,6 @@
 ---
 
 <nav>
-  <link rel="stylesheet" type="text/css" href="/assets/css/nav.css">
   <ul>
     {% for item in site.data.navigation %}
       <li>
