@@ -7,6 +7,7 @@ rvm:
 cache: bundler  # caching bundler gem packages will speed up build
 sudo: false  # route your build to the container-based infrastructure for a faster build
 script:
+  - make update
   - make build
 
 env:
