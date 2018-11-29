@@ -1,5 +1,5 @@
 current directory: /home/travis/build/donizyo/donizyo.github.io/vendor/bundle/ruby/2.4.0/gems/commonmarker-0.17.13/ext/commonmarker
-/home/travis/.rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20181021-4061-1t3ad1d.rb extconf.rb
+/home/travis/.rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20181129-4075-g8qynt.rb extconf.rb
 creating Makefile
 
 current directory: /home/travis/build/donizyo/donizyo.github.io/vendor/bundle/ruby/2.4.0/gems/commonmarker-0.17.13/ext/commonmarker
@@ -401,4 +401,4 @@ linking shared-object commonmarker/commonmarker.so
 
 current directory: /home/travis/build/donizyo/donizyo.github.io/vendor/bundle/ruby/2.4.0/gems/commonmarker-0.17.13/ext/commonmarker
 make "DESTDIR=" install
-/usr/bin/install -m 0755 commonmarker.so ./.gem.20181021-4061-dzvpc6/commonmarker
+/usr/bin/install -m 0755 commonmarker.so ./.gem.20181129-4075-17968r6/commonmarker

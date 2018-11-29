@@ -12,23 +12,23 @@ Gem::Specification.new do |s|
   s.email = "technoweenie@gmail.com".freeze
   s.homepage = "https://github.com/lostisland/sawyer".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.7.7".freeze
+  s.rubygems_version = "2.7.8".freeze
   s.summary = "Secret User Agent of HTTP".freeze
 
-  s.installed_by_version = "2.7.7" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.7.8" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 2
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<faraday>.freeze, ["< 1.0", "~> 0.8"])
-      s.add_runtime_dependency(%q<addressable>.freeze, ["< 2.6", ">= 2.3.5"])
+      s.add_runtime_dependency(%q<faraday>.freeze, ["~> 0.8", "< 1.0"])
+      s.add_runtime_dependency(%q<addressable>.freeze, [">= 2.3.5", "< 2.6"])
     else
-      s.add_dependency(%q<faraday>.freeze, ["< 1.0", "~> 0.8"])
-      s.add_dependency(%q<addressable>.freeze, ["< 2.6", ">= 2.3.5"])
+      s.add_dependency(%q<faraday>.freeze, ["~> 0.8", "< 1.0"])
+      s.add_dependency(%q<addressable>.freeze, [">= 2.3.5", "< 2.6"])
     end
   else
-    s.add_dependency(%q<faraday>.freeze, ["< 1.0", "~> 0.8"])
-    s.add_dependency(%q<addressable>.freeze, ["< 2.6", ">= 2.3.5"])
+    s.add_dependency(%q<faraday>.freeze, ["~> 0.8", "< 1.0"])
+    s.add_dependency(%q<addressable>.freeze, [">= 2.3.5", "< 2.6"])
   end
 end

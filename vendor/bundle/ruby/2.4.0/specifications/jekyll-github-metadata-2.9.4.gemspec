@@ -12,17 +12,17 @@ Gem::Specification.new do |s|
   s.email = ["parkrmoore@gmail.com".freeze]
   s.homepage = "https://github.com/parkr/github-metadata".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.7.7".freeze
+  s.rubygems_version = "2.7.8".freeze
   s.summary = "The site.github namespace".freeze
 
-  s.installed_by_version = "2.7.7" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.7.8" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<jekyll>.freeze, ["~> 3.1"])
-      s.add_runtime_dependency(%q<octokit>.freeze, ["!= 4.4.0", "~> 4.0"])
+      s.add_runtime_dependency(%q<octokit>.freeze, ["~> 4.0", "!= 4.4.0"])
       s.add_development_dependency(%q<bundler>.freeze, ["~> 1.5"])
       s.add_development_dependency(%q<netrc>.freeze, [">= 0"])
       s.add_development_dependency(%q<rake>.freeze, [">= 0"])
@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rubocop>.freeze, ["~> 0.51"])
     else
       s.add_dependency(%q<jekyll>.freeze, ["~> 3.1"])
-      s.add_dependency(%q<octokit>.freeze, ["!= 4.4.0", "~> 4.0"])
+      s.add_dependency(%q<octokit>.freeze, ["~> 4.0", "!= 4.4.0"])
       s.add_dependency(%q<bundler>.freeze, ["~> 1.5"])
       s.add_dependency(%q<netrc>.freeze, [">= 0"])
       s.add_dependency(%q<rake>.freeze, [">= 0"])
@@ -39,7 +39,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<jekyll>.freeze, ["~> 3.1"])
-    s.add_dependency(%q<octokit>.freeze, ["!= 4.4.0", "~> 4.0"])
+    s.add_dependency(%q<octokit>.freeze, ["~> 4.0", "!= 4.4.0"])
     s.add_dependency(%q<bundler>.freeze, ["~> 1.5"])
     s.add_dependency(%q<netrc>.freeze, [">= 0"])
     s.add_dependency(%q<rake>.freeze, [">= 0"])

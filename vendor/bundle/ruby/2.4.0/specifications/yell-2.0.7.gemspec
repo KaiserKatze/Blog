@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
   s.homepage = "http://rudionrailspec.github.com/yell".freeze
   s.licenses = ["MIT".freeze]
   s.rubyforge_project = "yell".freeze
-  s.rubygems_version = "2.7.7".freeze
+  s.rubygems_version = "2.7.8".freeze
   s.summary = "Yell - Your Extensible Logging Library".freeze
 
-  s.installed_by_version = "2.7.7" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.7.8" if s.respond_to? :installed_by_version
 end

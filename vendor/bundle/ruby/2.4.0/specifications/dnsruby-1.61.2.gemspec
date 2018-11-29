@@ -16,10 +16,10 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/alexdalitz/dnsruby".freeze
   s.licenses = ["Apache License, Version 2.0".freeze]
   s.post_install_message = "Installing dnsruby...\n  For issues and source code: https://github.com/alexdalitz/dnsruby\n  For general discussion (please tell us how you use dnsruby): https://groups.google.com/forum/#!forum/dnsruby".freeze
-  s.rubygems_version = "2.7.7".freeze
+  s.rubygems_version = "2.7.8".freeze
   s.summary = "Ruby DNS(SEC) implementation".freeze
 
-  s.installed_by_version = "2.7.7" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.7.8" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<pry>.freeze, ["~> 0.10"])
       s.add_development_dependency(%q<pry-byebug>.freeze, ["~> 2.0"])
-      s.add_development_dependency(%q<rake>.freeze, [">= 10.3.2", "~> 10"])
+      s.add_development_dependency(%q<rake>.freeze, ["~> 10", ">= 10.3.2"])
       s.add_development_dependency(%q<minitest>.freeze, ["~> 5.4"])
       s.add_development_dependency(%q<rubydns>.freeze, ["~> 1.0"])
       s.add_development_dependency(%q<nio4r>.freeze, ["~> 1.1"])
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<pry>.freeze, ["~> 0.10"])
       s.add_dependency(%q<pry-byebug>.freeze, ["~> 2.0"])
-      s.add_dependency(%q<rake>.freeze, [">= 10.3.2", "~> 10"])
+      s.add_dependency(%q<rake>.freeze, ["~> 10", ">= 10.3.2"])
       s.add_dependency(%q<minitest>.freeze, ["~> 5.4"])
       s.add_dependency(%q<rubydns>.freeze, ["~> 1.0"])
       s.add_dependency(%q<nio4r>.freeze, ["~> 1.1"])
@@ -48,7 +48,7 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<pry>.freeze, ["~> 0.10"])
     s.add_dependency(%q<pry-byebug>.freeze, ["~> 2.0"])
-    s.add_dependency(%q<rake>.freeze, [">= 10.3.2", "~> 10"])
+    s.add_dependency(%q<rake>.freeze, ["~> 10", ">= 10.3.2"])
     s.add_dependency(%q<minitest>.freeze, ["~> 5.4"])
     s.add_dependency(%q<rubydns>.freeze, ["~> 1.0"])
     s.add_dependency(%q<nio4r>.freeze, ["~> 1.1"])

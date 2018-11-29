@@ -13,8 +13,8 @@ Gem::Specification.new do |s|
   s.email = ["jordon@envygeeks.io".freeze]
   s.homepage = "http://github.com/envygeeks/forwardable-extended".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.7.7".freeze
+  s.rubygems_version = "2.7.8".freeze
   s.summary = "Forwardable with hash, and instance variable extensions.".freeze
 
-  s.installed_by_version = "2.7.7" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.7.8" if s.respond_to? :installed_by_version
 end

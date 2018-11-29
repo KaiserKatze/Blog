@@ -1,5 +1,5 @@
 current directory: /home/travis/build/donizyo/donizyo.github.io/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
-/home/travis/.rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20181021-4061-pnxv1d.rb extconf.rb
+/home/travis/.rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20181129-4075-1360tvr.rb extconf.rb
 creating Makefile
 
 current directory: /home/travis/build/donizyo/donizyo.github.io/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
@@ -27,4 +27,4 @@ linking shared-object fastfilereaderext.so
 
 current directory: /home/travis/build/donizyo/donizyo.github.io/vendor/bundle/ruby/2.4.0/gems/eventmachine-1.2.7/ext/fastfilereader
 make "DESTDIR=" install
-/usr/bin/install -m 0755 fastfilereaderext.so ./.gem.20181021-4061-a39avy
+/usr/bin/install -m 0755 fastfilereaderext.so ./.gem.20181129-4075-u2bgrc

@@ -1,5 +1,5 @@
 current directory: /home/travis/build/donizyo/donizyo.github.io/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.5/ext/nokogiri
-/home/travis/.rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20181021-4061-5mct5f.rb extconf.rb
+/home/travis/.rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20181129-4075-1kp21rk.rb extconf.rb
 checking if the C compiler accepts ... yes
 Building nokogiri using system libraries.
 WARNING: libxml2 version 2.9.3 or later is highly recommended, but proceeding anyway.
@@ -109,4 +109,4 @@ rm -rf /home/travis/build/donizyo/donizyo.github.io/vendor/bundle/ruby/2.4.0/gem
 
 current directory: /home/travis/build/donizyo/donizyo.github.io/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.8.5/ext/nokogiri
 make "DESTDIR=" install
-/usr/bin/install -m 0755 nokogiri.so ./.gem.20181021-4061-irtrqw/nokogiri
+/usr/bin/install -m 0755 nokogiri.so ./.gem.20181129-4075-1g5qgqd/nokogiri
