@@ -1,6 +1,3 @@
----
-# Navigation template
----
 
 <nav>
   <ul>
