@@ -12,10 +12,12 @@ title: Index
 
 <ul>
   {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    {{ post.excerpt }}
-  </li>
+    {% unless post.hidden %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
+      </li>
+    {% endunless %}
   {% endfor %}
 </ul>
 
