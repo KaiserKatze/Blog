@@ -12,11 +12,13 @@ title: Index
 
 <ul>
   {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    {{ post.excerpt }}
-  </li>
-  {% endfor %}
+    {% unless post.hidden %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.excerpt }}
+      </li>
+    {% endif %}
+  {% endunless %}
 </ul>
 
 {% for category in site.categories %}

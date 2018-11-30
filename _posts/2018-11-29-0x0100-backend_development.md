@@ -2,7 +2,7 @@
 layout: post
 title:  "0x0100 后端开发"
 date:   2018-11-29 23:44:00 +0800
-categories: computer
+categories: computer wiki
 ---
 
 # 后端平台
