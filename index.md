@@ -17,8 +17,8 @@ title: Index
         <a href="{{ post.url }}">{{ post.title }}</a>
         {{ post.excerpt }}
       </li>
-    {% endif %}
-  {% endunless %}
+    {% endunless %}
+  {% endfor %}
 </ul>
 
 {% for category in site.categories %}
